@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<title>Document</title>
+</head>
+<body>
+	<style>
+		.question1{
+			visibility: visible;
+		}
+		.question2{
+			visibility: hidden;
+		}
+		.question3{
+			visibility: hidden;
+		}
+	
+	
+	</style>
+	<div class="qcontainer">
+		<div  class='question1'>
+			<h1>Batman's first name is?</h1>
+			<label><input type="radio" name="q1" value="Bruce"> Bruce</label>
+			<label><input type="radio" name="q1" value="Mark"> Mark</label>
+			<label><input type="radio" name="q1" value="Steven"> Steven</label>
+			<br>
+			<button class='nb'>Next</button>
+		</div></div>
+	<div class="qcontainer">
+		<div  class='question2'>
+			<h1>Spiderman lives in:</h1>
+			<label><input type="radio" name="q2" value="New Jersey"> New Jersey</label>
+			<label><input type="radio" name="q2" value="New York"> New York</label>
+			<label><input type="radio" name="q2" value="Boston"> Boston</label>
+			<br>
+			<button class='nb'>Next</button>
+		</div></div>
+	<div class="qcontainer">
+		<div class='question3'>
+			<h1>How many claws does Wolverine have?</h1>
+			<label><input type="radio" name="q3" value="2"> 2</label>
+			<label><input type="radio" name="q3" value="4"> 4</label>
+			<label><input type="radio" name="q3" value="6"> 6</label>
+			<br>
+			<button class='fin'>Finish</button>
+		</div></div>
+	<div class="qcontainer">
+		<div class='results'>
+			<h1>You Scored:</h1>
+			<h1></h1>
+		</div></div>
+	<script>
+		function answers(q1,q2,q3){
+
+	answer1='Bruce';
+		answer2="New York";
+		answer3='6';
+			x=0;
+			
+			if(q1==true){
+				x=100/3;
+			}
+			if(q2==true){
+				x+=100/3;
+			}
+			if(q3==true){
+				x+=100/3;
+			}
+			btn=document.getElementsByClassName('fin');
+			
+		}
+
+	btn=document.getElementsByClassName('nb');
+		for (b in btn){
+			btn[b].onclick=function(){
+				console.log(btn[b].innerHTML)
+			};
+		}
+//		questions=[question1,question2,question3,results];
+//		while (questions<4){
+//			
+//		}
+//			
+//				
+//			
+
+	</script>
+
+</body>
+</html>
